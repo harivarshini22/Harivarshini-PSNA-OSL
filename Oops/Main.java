@@ -1,9 +1,13 @@
 class Order{
-
+    public int orderId;
+    public String orderStatus;
 }
 
-public class Main{
-    static void main(){
-        Order order = new Order();
-    }
+public Order(int orderID){
+    this.orderID=orderID;
+}
+
+public Order(int orderId,String orderStatus){
+    this.orderId=orderId;
+    this.orderStatus=orderStatus;
 }
